@@ -1,0 +1,16 @@
+<form action="createProject.php" method="post" class="projectForm" id="projectForm">
+    <label for="projectName">Project Name:</label>
+    <input type="text" name="projectName" id="projectName" required/>
+    <label for="projectMaxMembers">Maximum Number of Members:</label>
+    <input type="number" name="projectMaxMembers" id="projectMaxMembers" required/>
+    <label for="projectCategory">Project Category:</label>
+    <input type="text" id="projectCategory" name="projectCategory" required/>
+    <label for="projectImage">Project Image URL:</label>
+    <input type="text" value="optional" id="projectImage" name="projectImage"/>
+    <label for="projectDesc">Project Description:</label>
+    <textarea form="projectForm" id="projectDesc" name="projectDesc"></textarea>
+    <label for="projectPrivate">Private Project:</label>
+    <input type="checkbox" id="projectPrivate" name="projectPrivate"/>
+    <input type="submit"/>
+    
+</form>
