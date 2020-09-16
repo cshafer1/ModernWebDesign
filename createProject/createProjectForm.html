@@ -10,7 +10,6 @@
     <label for="projectDesc">Project Description:</label>
     <textarea form="projectForm" id="projectDesc" name="projectDesc"></textarea>
     <label for="projectPrivate">Private Project:</label>
-    <input type="checkbox" id="projectPrivate" name="projectPrivate"/>
+    <input type="hidden" name="projectPrivate" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
     <input type="submit"/>
-    
 </form>
