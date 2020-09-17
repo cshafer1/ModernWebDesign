@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Knewave|Merriweather|Palanquin Dark");
+.projectForm label {
+    float: left;
+    display: inline-block;
+    clear: left;
+    width: 250px;
+    text-align: left;
+}
+
+.projectForm input, textarea {
+    display: inline-block;
+    float:left;
+}
+
+.projectForm input[type=submit]{
+    display: block;
+    float: left;
+    clear: left;
+    margin-top: 10px;
+}
+
+.projectForm {
+    margin-left: 20px;
+}
+
+h1 {
+    font-family: 'Palanquin Dark';
+    font-weight: bold;
+    color: #1ccEc5;
+}
+
+label {
+    font-family: "Merriweather", sans-serif;
+}

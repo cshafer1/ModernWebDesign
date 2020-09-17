@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Knewave|Merriweather|Palanquin Dark");
+.title {
+  font-family: "Knewave";
+  font-size: 40px;
+  text-align: left;
+  color: #1ccEc5; 
+  padding: 10px;
+}
+
+p {
+  font-family: "Merriweather", sans-serif;
+  text-align: left;
+  color: black;
+}
+
+.project a {
+  text-decoration:none
+}
+
+.project h3 {
+  font-family: 'Palanquin Dark';
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
+}
+
+main {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 20px;
+  width: 100%;
+
+  display: grid;
+  /* Define Auto Row Size */
+  grid-auto-rows: 100px;
+  /* Define our columns */
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 4em;
+}
+
+article {
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 50px;
+}
+
