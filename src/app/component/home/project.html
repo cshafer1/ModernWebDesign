@@ -1,0 +1,10 @@
+
+<article class="project">
+    <h3>{{$ctrl.project.projectName}}</h3>
+    <p>
+            <img ng-if="$ctrl.project.projectImage != 'optional'"
+                 src="{{$ctrl.project.projectImage}}" alt="{{$ctrl.project.projectImage}}" width="120" height="67"/>
+            <br>
+            {{$ctrl.project.projectDesc}}
+        </p>
+</article>
