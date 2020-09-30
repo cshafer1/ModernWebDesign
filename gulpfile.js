@@ -22,7 +22,7 @@ var gulp = require('gulp'),
 /* These definitions are unique to your file structure */
 var argv = yargs.argv,
     root = 'src',
-    dist = 'backend/dist',
+    dist = 'dist',
     styles = root + '/sass/*.scss',
     scripts = 'src/app/**/*.js',
     developmentServerURL = '',
@@ -32,6 +32,7 @@ var argv = yargs.argv,
     'parse/dist/parse.min.js',
     'angular-parse/angular-parse.js',
     '@fintechstudios/angularjs-mdc/dist/angularjs-mdc.min.js',
+    '@uirouter/visualizer/bundles/visualizer.min.js',
     'angular-material-expansion-panel/dist/md-expansion-panel.js',
     'vue/dist/vue.js', 'ngVue/build/index.js'
   ]; // these are 3rd party libraries in the node_modules folder NOT *.module.js files

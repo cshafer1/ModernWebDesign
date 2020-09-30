@@ -1,9 +1,9 @@
 /*--------------------- Home Component ---------------------*/
-const createProject = {
-    templateUrl: '/createProject/createProjectForm.html'
+const navbar = {
+    templateUrl: '/common/utility/navbar.html'
 }
 
 // Home Component with Routing (Routed / Stateful)
-angular.module('app').component('create', createProject);
+angular.module('common').component('navbar', navbar);
 /*--------------------- Home Component ---------------------*/
 

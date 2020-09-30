@@ -1,12 +1,16 @@
-function init($uiRouter){
+function init($rootScope, $uiRouter){
     var Visualizer = window['ui-router-visualizer'].Visualizer;
     var pluginInstance = $uiRouter.plugin(Visualizer);
-}
-
-function init($uiRouter){
     
+    $rootScope.isEmpty = function(obj) {
+        for (var key in obj) {
+            if (obj.hasOwnProperty(key))
+                return false;
+        }
+        return true;
+    }
 }
 
 angular
     .module('common')
-    .run(init)
+    .run(init);
