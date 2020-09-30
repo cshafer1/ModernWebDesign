@@ -1,6 +1,6 @@
 /*--------------------- Project Grid Component ---------------------*/
 const projectGrid = {
-    templateUrl: '/component/browseProject/projectGrid.html',
+    templateUrl: './projectGrid.html',
     controller: 'ProjectGridController',
     bindings: {
         projects: '<'

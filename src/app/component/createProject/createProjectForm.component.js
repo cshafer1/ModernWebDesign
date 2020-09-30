@@ -2,7 +2,7 @@
 
 
 const createProjectForm = {
-    templateUrl: '/createProject/createProjectForm.html',
+    templateUrl: './createProjectForm.html',
     controller: 'CreateProjectFormController'
 }
 

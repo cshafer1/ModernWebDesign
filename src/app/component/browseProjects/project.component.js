@@ -1,6 +1,6 @@
 /*--------------------- Project Component ---------------------*/
 const project = {
-    templateUrl: '/component/browseProjects/project.html',
+    templateUrl: './project.html',
     controller: 'ProjectController',
     bindings: {
         project: '<'
