@@ -1,4 +1,4 @@
 angular
     .module('components.createProjectForm',
-           ['uiRouter']
+           ['ui.router']
     )

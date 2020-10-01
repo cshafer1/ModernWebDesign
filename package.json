@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "gulp production && node ./backend/index.js",
+    "start": "gulp production",
     "dev": "PORT=1337 node ./backend/index.js",
     "test": "./node_modules/.bin/cypress run",
     "deploy": "gulp production",
@@ -27,6 +27,8 @@
     "@uirouter/angularjs": "^1.0.22",
     "@uirouter/visualizer": "^4.0.0",
     "angular-parse": "^0.2.2",
+    "angular-ui-router": "^1.0.28",
+    "gulp-cli": "^2.3.0",
     "moment": "^2.18.1",
     "ngVue": "^1.6.0",
     "parse": "^1.11.1",

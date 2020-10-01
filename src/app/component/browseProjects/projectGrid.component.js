@@ -12,16 +12,18 @@ angular
     .component('pgrid', projectGrid)
     .config(function($stateProvider){
         $stateProvider
-            .state('projectGrid', {
-                url: '/projectGrid',
+            .state('pgrid', {
+                parent: 'app',
+                url: 'projectGrid',
                 component: 'pgrid',
                 resolve: {
                     projects: function($rootScope, ProjectModel){
                         if (ProjectModel.collection.length > 0)
                             return ProjectModel.collection;
-                        else
+                        else{
                             return ProjectModel.getAllProjects();
-                   } 
+                        }
+                   }
                 }
         })
     })

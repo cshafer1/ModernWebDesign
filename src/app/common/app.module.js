@@ -1,1 +1,1 @@
-angular.module('common', ['uiRouter']);
+angular.module('common', ['ui.router', 'ngParse']);

@@ -3,11 +3,19 @@ class ProjectModel {
         this.Parse = Parse;
         this.collection = []
         this.data = {};
+        this.name = "projects"
+        this.fields = ["name",
+                      "description",
+                      "maxMembers",
+                      "image",
+                      "private",
+                      "category"];
     }
     
     New(obj){
         if(angular.isUndefined(obj)){
             const parseObject = new this.Parse.Object(this.name)
+            console.log(parseObject);
             this.Parse.defineAttributes(parseObject,this.fields);
             return parseObject;
         }
@@ -18,6 +26,7 @@ class ProjectModel {
     }
     
     getAllProjects(){
+        console.log("inside project model");
         return new this.Parse.Query(this.New())
             .find((results)=> {
                 results.forEach((result)=> {
@@ -29,3 +38,5 @@ class ProjectModel {
             .catch((error) => Promise.reject(error));
     }
 }
+
+angular.module('common').service('ProjectModel', ProjectModel);

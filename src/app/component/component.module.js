@@ -1,6 +1,6 @@
 angular
     .module('components', [
-        'uiRouter',
+        'ui.router',
         'components.projectGrid',
         'components.createProjectForm'
     ]);

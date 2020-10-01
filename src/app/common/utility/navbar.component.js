@@ -1,6 +1,6 @@
 /*--------------------- Home Component ---------------------*/
 const navbar = {
-    templateUrl: '/common/utility/navbar.html'
+    templateUrl: './navbar.html'
 }
 
 // Home Component with Routing (Routed / Stateful)

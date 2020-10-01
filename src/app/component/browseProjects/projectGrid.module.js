@@ -1,4 +1,4 @@
 angular
     .module('components.projectGrid',
-           ['uiRouter']
+           ['ui.router']
     )
