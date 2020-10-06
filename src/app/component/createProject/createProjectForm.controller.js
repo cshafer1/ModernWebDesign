@@ -6,5 +6,5 @@ function CreateProjectFormController(){
 }
 
 angular
-    .module('components.projectGrid')
+    .module('components.createProjectForm')
     .controller('CreateProjectFormController', CreateProjectFormController);
