@@ -5,9 +5,9 @@ function PGController(){
         console.log($ctrl.projects);
     }
     
-    $ctrl.$onChanges = function() {
-        console.log("changes");
-        console.log(this);
+    $ctrl.$onChanges = function(changes) {
+        console.log("changes $onChanges" ,changes);
+        console.log($ctrl.projects);
     }
 }
 

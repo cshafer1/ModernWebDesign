@@ -1,4 +1,4 @@
-<main>
-    <h1>{{$ctrl.projects}}</h1>
+    <h1 ng-if="$ctrl.projects.length">{{$ctrl.projects}}</h1>
     <project ng-repeat="project in $ctrl.projects" project="project"></project>
+<main>
 </main>

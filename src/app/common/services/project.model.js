@@ -1,9 +1,9 @@
 class ProjectModel {
     constructor (Parse){
         this.Parse = Parse;
-        this.collection = []
+        this.collection = [];
         this.data = {};
-        this.name = "projects"
+        this.name = "Project"
         this.fields = ["name",
                       "description",
                       "maxMembers",
@@ -15,7 +15,6 @@ class ProjectModel {
     New(obj){
         if(angular.isUndefined(obj)){
             const parseObject = new this.Parse.Object(this.name)
-            console.log(parseObject);
             this.Parse.defineAttributes(parseObject,this.fields);
             return parseObject;
         }
@@ -33,6 +32,7 @@ class ProjectModel {
                     this.Parse.defineAttributes(result,this.fields)
                 })
                 this.collection = results;
+                console.log(this.collection);
                 return Promise.resolve(results);
             })
             .catch((error) => Promise.reject(error));

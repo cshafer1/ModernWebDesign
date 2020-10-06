@@ -17,4 +17,4 @@ function RegisterController() {
 
 angular
     .module('components.auth')
-    .controller('RegisterController', LoginController);
+    .controller('RegisterController', RegisterController);
