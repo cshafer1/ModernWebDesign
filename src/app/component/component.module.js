@@ -3,6 +3,6 @@ angular
         'ui.router',
         'ngParse',
         'components.projectGrid',
-        'components.createProjectForm',
-        'components.auth'
+        'components.auth',
+        'components.createProject'
     ]);

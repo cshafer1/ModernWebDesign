@@ -3,7 +3,7 @@
     float: left;
     display: inline-block;
     clear: left;
-    width: 250px;
+    width: 20vw;
     text-align: left;
 }
 
@@ -21,6 +21,16 @@
 
 .projectForm {
     margin-left: 20px;
+}
+
+.projectSubmitButton {
+    display:block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.createProjectFormDiv {
+    overflow: hidden;
 }
 
 h1 {

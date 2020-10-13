@@ -8,8 +8,8 @@ const createProjectForm = {
 
 
 angular
-    .module('components.createProjectForm')
-    .component('create', createProjectForm)
+    .module('components.createProject')
+    .component('createProjectForm', createProjectForm)
 
 
 

@@ -1,15 +1,20 @@
-<form action="createProject.php" method="post" class="projectForm" id="projectForm">
-    <label for="projectName">Project Name:</label>
-    <input type="text" name="projectName" id="projectName" required/>
-    <label for="projectMaxMembers">Maximum Number of Members:</label>
-    <input type="number" name="projectMaxMembers" id="projectMaxMembers" required/>
-    <label for="projectCategory">Project Category:</label>
-    <input type="text" id="projectCategory" name="projectCategory" required/>
-    <label for="projectImage">Project Image URL:</label>
-    <input type="text" value="optional" id="projectImage" name="projectImage"/>
-    <label for="projectDesc">Project Description:</label>
-    <textarea form="projectForm" id="projectDesc" name="projectDesc"></textarea>
-    <label for="projectPrivate">Private Project:</label>
-    <input type="hidden" name="projectPrivate" value="0"><input type="checkbox" onclick="this.previousSibling.value=1-this.previousSibling.value">
-    <input type="submit"/>
-</form>
+<div class="createProjectFormDiv">
+    <form nonvalidate class="projectForm" id="projectForm">
+        <label for="projectName">Project Name:</label>
+        <input type="text" name="projectName" id="projectName" required ng-model="project.name"/>
+        <label for="projectMaxMembers">Maximum Number of Members:</label>
+        <input type="number" name="projectMaxMembers" id="projectMaxMembers" required ng-model="project.maxMembers"/>
+        <label for="projectCategory">Project Category:</label>
+        <input type="text" id="projectCategory" name="projectCategory" required ng-model="project.category"/>
+        <label for="projectImage">Project Image URL:</label>
+        <input type="text" value="optional" id="projectImage" name="projectImage" ng-model="project.image"/>
+        <label for="projectDesc">Project Description:</label>
+        <textarea form="projectForm" id="projectDesc" name="projectDesc" ng-model="project.description"></textarea>
+        <label for="projectPrivate">Private Project:</label>
+        <input type="checkbox" name="projectPrivate" ng-model="project.private"/>
+        
+    </form>
+</div>
+<div>
+    <button ng-click="saveProject($event)" class="projectSubmitButton">Save Project</button>
+</div>
