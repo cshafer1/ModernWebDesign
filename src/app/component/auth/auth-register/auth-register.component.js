@@ -1,5 +1,5 @@
 const register = {
-    templateUrl: './auth-login.html',
+    templateUrl: './auth-register.html',
     controller: 'RegisterController'
 }
 

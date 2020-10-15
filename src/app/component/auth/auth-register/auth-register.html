@@ -1,6 +1,6 @@
 <div>
     <div>
-        <auth-form user="" button="Sign Up" on-submit=""></auth-form>
+        <auth-form user="$ctrl.user" button="Sign Up" on-submit="$ctrl.createUser($event);"></auth-form>
     </div>
     <div>
         <a ui-sref="auth.login">Already have an account? Login here.</a>

@@ -2,6 +2,7 @@ function PGController(){
     const $ctrl = this;
     
     $ctrl.$onInit = function() {
+        console.log("pgrid init");
         console.log($ctrl.projects);
     }
     
